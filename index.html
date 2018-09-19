@@ -1,9 +1,244 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>麦克笔记</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/mick.css"/>
+		
+	<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+	<!--[if lt IE 9]>
+	  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default clearfix">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+				<a class="navbar-brand" href="#">
+					<img src="static/img/logo.png" />
+				</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li> <a href="#" class="active">首页</a> </li>
+					<li> <a href="#">博客</a> </li>
+					<li> <a href="#">专题</a> </li>
+					<li> <a href="#">课程</a> </li>
+					<li> <a href="#">收藏</a> </li>
+					<li> <a href="#">关于</a> </li>
+					<li> <a href="#">友链</a> </li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">搜索</button>
+				</form>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div class="container clearfix">
+		<div class="row">
+			<div class="col-md-8">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  	<!-- Indicators -->
+					<ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					</ol>
+				
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					    	<a href="">
+					    		 <img src="static/img/demo/banner1.jpg" alt="...">
+					    	</a>
+					    </div>
+					    <div class="item">
+					    	<a href="">
+					    		<img src="static/img/demo/banner2.jpg" alt="...">
+					    	</a>
+					    </div>
+					    <div class="item active">
+					    	<a href="">
+					    		<img src="static/img/demo/banner3.jpg" alt="...">
+					    	</a>
+					    </div>
+					    <div class="item">
+					     	<a href="">
+					    		<img src="static/img/demo/banner4.jpg" alt="...">
+					    	</a>
+					    </div>
+					</div>
+				
+				  	<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					</a>
+				</div>
+				
+				<div class="panel panel-default">
+				  <div class="panel-heading clearfix">
+				    <h3 class="panel-title pull-left">博客</h3>
+				    <div class=" pull-right">
+				    	<a href="">最新</a>
+				    	<a href="">最热</a>
+				    </div>
+				  </div>
+				  <div class="panel-body">
+				  	<div class="list-group">
+					  	<a href="#" class="list-group-item">
+					  		<img src="" alt="" />
+					  		
+					  		
+						    <h4 class="list-group-item-heading">精通Spring Boot 42讲</h4>
+						    <p class="list-group-item-text">...</p>
+						    
+					  	</a>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-default category">
+					<div class="panel-heading clearfix">
+					    <h3 class="panel-title pull-left">博客分类</h3>
+					</div>
+					<div class="panel-body">
+				   		<a href="">
+				   			<img src="static/img/demo/icon_qianduan.png" alt="" />
+				   			<span>前端开发11</span>
+				   		</a>
+				   		<a href="">
+				   			<img src="static/img/demo/icon_qianduan.png" alt="" />
+				   			<span>前端开发22</span>
+				   		</a>
+				   		<a href="">
+				   			<img src="static/img/demo/icon_qianduan.png" alt="" />
+				   			<span>前端开发33</span>
+				   		</a>
+				   		<a href="">
+				   			<img src="static/img/demo/icon_qianduan.png" alt="" />
+				   			<span>大数据可视化开发</span>
+				   		</a>
+				  	</div>
+				</div>
+				<div class="panel panel-default tag">
+					<div class="panel-heading clearfix">
+					    <h3 class="panel-title pull-left">热门标签</h3>
+					</div>
+					<div class="panel-body">
+				   		<a href="">
+				   			<span>前端开发11</span>
+				   		</a>
+				   		<a href="">
+				   			<span>前端开发22</span>
+				   		</a>
+				   		<a href="">
+				   			<span>前端开发33</span>
+				   		</a>
+				   		<a href="">
+				   			<span>大数据可视化开发</span>
+				   		</a>
+				  	</div>
+				</div>
+				
+				<div class="panel panel-default comment">
+					<div class="panel-heading clearfix">
+					    <h3 class="panel-title pull-left">打赏特权</h3>
+					</div>
+					<div class="panel-body">
+				   		<a href="">
+				   			<span>前端开发11</span>
+				   		</a>
+				   		<a href="">
+				   			<span>前端开发22</span>
+				   		</a>
+				   		<a href="">
+				   			<span>前端开发33</span>
+				   		</a>
+				   		<a href="">
+				   			<span>大数据可视化开发</span>
+				   		</a>
+				  	</div>
+				</div>
+				
+				<div class="panel panel-default comment">
+					<div class="panel-heading clearfix">
+					    <h3 class="panel-title pull-left">热门评论</h3>
+					</div>
+					<div class="panel-body">
+				   		<a href="">
+				   			<span>前端开发11</span>
+				   		</a>
+				   		<a href="">
+				   			<span>前端开发22</span>
+				   		</a>
+				   		<a href="">
+				   			<span>前端开发33</span>
+				   		</a>
+				   		<a href="">
+				   			<span>大数据可视化开发</span>
+				   		</a>
+				  	</div>
+				</div>
+				
+				<div class="panel panel-default comment">
+					<div class="panel-heading clearfix">
+					    <h3 class="panel-title pull-left">关于本站</h3>
+					</div>
+					<div class="panel-body">
+				   		<a href="">
+				   			<span>前端开发11</span>
+				   		</a>
+				   		<a href="">
+				   			<span>前端开发22</span>
+				   		</a>
+				   		<a href="">
+				   			<span>前端开发33</span>
+				   		</a>
+				   		<a href="">
+				   			<span>大数据可视化开发</span>
+				   		</a>
+				  	</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+  	
+    
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>

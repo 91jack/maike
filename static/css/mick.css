@@ -1,0 +1,95 @@
+body {
+	background-color: rgb(245, 245, 245);
+	font-size: 18px;
+}
+.navbar {
+	background: #fff;
+	border:none;
+}
+.navbar-brand {
+	padding: 5px 0;
+	margin-right: 50px;
+}
+.navbar-brand img {
+	height:40px;
+	
+}
+.navbar-default .navbar-nav>li>a{
+	font-size:18px;
+	color: #4a4a4a;
+	line-height: 18px;
+}
+.navbar-default .navbar-nav>li a.active {
+	color: rgb(187,28,34)!important;
+	border-bottom: 2px solid rgb(187,28,34);
+}
+
+.carousel-inner {
+	height:312px;
+	overflow: hidden;
+}
+.carousel-inner .item {
+	height:312px;
+}
+.carousel-inner img {
+	width:100%!important;
+	height:100%!important;
+}
+
+
+.panel {
+	border: none;
+	
+}
+.panel-heading {
+	background: #fff!important;
+}
+.panel-title {
+	font-size: 18px;
+}
+
+.category a {
+	display: block;
+	width:50%;
+	height:40px;
+	line-height: 40px;
+	min-width: 160px;
+	float:left;
+	color: #777;
+}
+.category img {
+	width:25px;
+	height:25px;
+	float:left;
+	margin-right: 5px;
+}
+.category span {
+	float:left;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+
+.tag a {
+	background-color: #f5f5f5;
+    height: 40px;
+    display: inline-block;
+    float: left;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+    min-width: 100px;
+    color: #777;
+}
+.tag a:hover {
+	text-decoration: none;
+}
